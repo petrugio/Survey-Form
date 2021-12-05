@@ -1,0 +1,243 @@
+<div class="box">
+  <header class="header">
+    <h1 id="title">Honey Bee Survey Moldova</h1>
+  <p id="description">Thank you for taking part in the Moldova Honey Bee Survey</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Region</p>
+      <select id="dropdown" name="region" class="form-control" required>
+        <option disabled selected value>Select region</option>
+        <option value="Anenii Noi">Anenii Noi</option>
+        <option value="Basarabeasca">Basarabeasca</option>
+        <option value="Briceni">Briceni</option>
+        <option value="Cahul">Cahul</option>
+        <option value="Cantemir">Cantemir</option>
+        <option value="Călărași">Călărași</option>
+        <option value="Cimișlia">Cimișlia</option>
+        <option value="Criuleni">Criuleni</option>
+        <option value="Dondușeni">Dondușeni</option>
+        <option value="Drochia">Drochia</option>
+        <option value="Dubăsari">Dubăsari</option>
+        <option value="Edineț">Edineț</option>
+        <option value="Fălești">Fălești</option>
+        <option value="Florești">Florești</option>
+        <option value="Glodeni">Glodeni</option>
+        <option value="Hîncești">Hîncești</option>
+        <option value="Ialoveni">Ialoveni</option>
+        <option value="Leova">Leova</option>
+        <option value="Nisporeni">Nisporeni</option>
+        <option value="Ocnița">Ocnița</option>
+        <option value="Orhei">Orhei</option>
+        <option value="Rezina">Rezina</option>
+        <option value="Rîșcani">Rîșcani</option>
+        <option value="Sîngerei">Sîngerei</option>
+        <option value="Soroca">Soroca</option>
+        <option value="Strășeni">Strășeni</option>
+        <option value="Șoldănești">Șoldănești</option>
+        <option value="Ștefan Vodă">Ștefan Vodă</option>
+        <option value="Taraclia">Taraclia</option>
+        <option value="Telenești">Telenești</option>
+        <option value="Ungheni">Ungheni</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>What type of beekeeper are you?</p>
+      <label>
+        <input
+          name="beekeeper-type"
+          value="hobby"
+          type="radio"
+          class="input-radio"
+          checked
+        />Backyard/Hobby (<30 hives)</label
+      >
+      <label>
+        <input
+          name="beekeeper-type"
+          value="commercial"
+          type="radio"
+          class="input-radio"
+        />Commercial small scale (30-300 hives)</label
+      >
+
+      <label
+        ><input
+          name="beekeeper-type"
+          value="commercial-big"
+          type="radio"
+          class="input-radio"
+        />Commercial big scale (>300 hives)</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+         What best describes the 5 miles surrounding your apiaries?
+      </p>
+      <select id="surrounding" name="Surrounding" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="industrial ">Industrial</option>
+        <option value="suburban">Urban/suburban</option>
+        <option value="agricultural ">Agricultural</option>
+        <option value="natural">Natural (i.e. forest, wetlands, meadows, etc.)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Why do you keep bees? Please check all that apply.
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="apitherapy "
+          type="checkbox"
+          class="input-checkbox"
+        />Apitherapy</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="hobby"
+          type="checkbox"
+          class="input-checkbox"
+        />Enjoyment/hobby</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="help-bee"
+          type="checkbox"
+          class="input-checkbox"
+        />Help bee population</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="help-environment"
+          type="checkbox"
+          class="input-checkbox"
+        />Help environment</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="sale"
+          type="checkbox"
+          class="input-checkbox"
+        />Honey/pollen/propolis/wax production for sale</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="use"
+          type="checkbox"
+          class="input-checkbox"
+        />Honey/pollen/propolis/wax production for personal use</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="polinators-com"
+          type="checkbox"
+          class="input-checkbox"
+        />Pollination (commercial)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="polinators-personal"
+          type="checkbox"
+          class="input-checkbox"
+        />Pollination (personal/backyard)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="research"
+          type="checkbox"
+          class="input-checkbox"
+        />Research</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="education"
+          type="checkbox"
+          class="input-checkbox"
+        />Teaching/education</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="queen"
+          type="checkbox"
+          class="input-checkbox"
+        />Queen production</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
